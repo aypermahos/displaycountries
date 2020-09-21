@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+      <ng-container *ngFor="let country of countries">
+        <div class="card">
+          <img src="{{ country.flag }}" class="card-img-top flag-style" />
+          <div class="card-body">
+            <h5 class="card-title">{{ country.name }}</h5>
+            <p class="card-text">{{ country.capital }}: {{ country.region }}</p>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
